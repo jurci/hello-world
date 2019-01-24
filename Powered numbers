@@ -1,1 +1,2 @@
-for x in range (-10,11): print (x**n)
+# power number each (i) in a given range to the power of (n):
+for i in range (-10,11): print (i**n)
