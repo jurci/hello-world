@@ -1,0 +1,110 @@
+# Matfyz Python Chapter 1 Excercises: Uncoment excercise first !
+
+
+'''###
+#print (1/0)
+#print (1//0)
+#print (1%0)
+print (1--2)
+print (1---2)
+print (1----2)
+print (1-----2)
+
+print (1e+100)
+print (1e+101)
+# 'inf' means 'infinity'
+print (1e+400)
+'''###
+
+
+'''###
+# For 'legs' calculate 'hypotenuse'
+import math
+a = 10
+b = 14
+c = math.sqrt((a**2)+(b**2))
+print (c)
+'''###
+
+
+'''###
+# Print 'first name' and 'last name' 10 times in a row
+first_name = ' jurci'
+last_name = ' JURCI,'
+ten = first_name + last_name
+print (ten * 10)
+'''###
+
+
+'''###
+# Create two int vaiables while the second always consists of 3 numbers.
+# Create the third variable consisting of first two in one number e.g.:
+# v1= 123
+# v2 = 456
+# v3 => 123456
+
+num1 = 123
+num2 = 456
+num3 = '{}{}'.format(num1, num2)
+print (num3)
+'''###
+
+
+'''###
+# Curency converter:
+
+czk = 1000
+eur = czk* (1/26)
+print (eur)
+eur = 30
+czk = eur*26
+print (czk)
+'''###
+
+
+'''###
+# Calculate final amount for 100 on a bank account 
+# for after 10 years with 4% p.a. interest:
+
+amount = 100
+year = range(1,11)
+interest = 0.04
+for i in year:
+    amount += (amount*interest)
+print (amount)
+'''###
+
+"""###
+# Create your business card including name, address, phone number in square
+
+print (
+'''
++-------------+
+|    jurci    |
+|   internet  |
+| 123 456 789 |
++-------------+
+''')
+"""###
+
+
+'''###
+# print all variable of 'white', 'blue', 'black'
+
+import itertools
+colors = ['white', 'blue', 'black']
+print (list(itertools.permutations(colors, r = len(colors))))
+'''###
+
+
+'''###
+# define variable with number an then define 3 variables with last 3 digits
+# of that number
+
+num = 123456890
+num = str(num)
+num1, num2, num3, num = int(num[-1]), int(num[-2]), int(num[-3]), int(num)
+print ('{}{}{}'.format(num3, num2, num1))
+'''###
+
+# to be continued
